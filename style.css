@@ -387,31 +387,17 @@ header {
 
 
 
-/* =========================
+/* =====================================================
    VERSIÓN PARA CELULAR
-========================= */
+===================================================== */
+
 @media (max-width: 768px) {
 
-    /* SECCIONES ZIGZAG */
-    .seccion-zigzag {
-        width: 90%;
-        flex-direction: column !important;
-        gap: 30px;
-        padding: 70px 0;
-    }
+    /* =========================
+       NAVBAR
+    ========================= */
 
-    /* El texto ocupa todo el ancho */
-    .contenido-seccion {
-        width: 100%;
-    }
-
-    /* La imagen queda debajo del texto */
-    .seccion-zigzag > img {
-        width: 100%;
-        height: 280px;
-    }
-
-        .navbar {
+    .navbar {
         width: 90%;
         flex-wrap: wrap;
         padding: 15px 0;
@@ -429,8 +415,157 @@ header {
         font-size: 13px;
     }
 
+    /* Ocultamos el botón INFORMATE */
     .btn-header {
         display: none;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+        min-height: 80vh;
+        padding: 80px 8% 50px;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 12vw, 70px);
+    }
+
+    .hero-etiqueta {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+
+    /* =========================
+       ¿QUÉ ES?
+    ========================= */
+
+    .que-es {
+        width: 90%;
+        padding: 70px 0;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .que-es-texto {
+        width: 100%;
+    }
+
+    .que-es-texto h2 {
+        font-size: 36px;
+    }
+
+    .que-es-texto p {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    .que-es-imagen {
+        width: 100%;
+    }
+
+    .que-es-imagen img {
+        width: 100%;
+        height: 280px;
+    }
+
+
+    /* =========================
+       LA LEY Y EL PROBLEMA
+    ========================= */
+
+    #ley,
+    #problema {
+        width: 90%;
+        padding: 70px 0;
+    }
+
+    #ley h2,
+    #problema h2,
+    .seccion-zigzag h2,
+    #alternativa h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    #ley p,
+    #problema p {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+
+    /* =========================
+       SECCIONES ZIGZAG
+    ========================= */
+
+    .seccion-zigzag {
+        width: 90%;
+        padding: 70px 0;
+        
+        /* Texto arriba e imagen abajo */
+        flex-direction: column !important;
+
+        gap: 35px;
+    }
+
+    .contenido-seccion {
+        width: 100%;
+    }
+
+    .seccion-zigzag h3 {
+        font-size: 21px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    .seccion-zigzag p {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+
+    /* =========================
+       IMÁGENES DEL ZIGZAG
+    ========================= */
+
+    .seccion-zigzag > img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+
+    /* =========================
+       ALTERNATIVA
+    ========================= */
+    #alternativa {
+        width: 90%;
+        padding: 70px 0;
+    }
+
+    .contenido-alternativa {
+        width: 100%;
+    }
+
+    #alternativa h3 {
+        font-size: 21px;
+    }
+
+    #alternativa p {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    .btn-firma {
+        width: 80%;
+        max-width: 300px;
+        padding: 14px 20px;
     }
 
 }
